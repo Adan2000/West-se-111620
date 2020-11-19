@@ -66,3 +66,17 @@ BankAccount.new(5000, "abc900", 'John')
 
 binding.pry
 0
+
+
+class Breakfast 
+    attr_reader :name, :ingredients
+    attr_accessor: :price
+
+    @@all = []
+    def initialize(name, price, ingredients) 
+        @name = name
+        @price = price
+        @ingredients = ingredients
+        @@all << self
+    end 
+end 
