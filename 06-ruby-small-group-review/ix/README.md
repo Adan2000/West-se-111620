@@ -68,5 +68,5 @@ Here are some questions to consider:
    * takes a `String` argument that is the name of a department and returns the first employee whose manager is working in that department
  * `Employee#tax_bracket`
    * returns an `Array` of all the employees whose salaries are within $1000 (± 1000) of the employee who invoked the method
-* `Employee#total`
+* `Employee.total`
    * returns an `Integer` of the total number of Employees 
