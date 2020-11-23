@@ -1,0 +1,2 @@
+class ManagerEmployeeContract
+end 
