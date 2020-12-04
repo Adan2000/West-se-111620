@@ -10,6 +10,5 @@ class Character < ActiveRecord::Base
         puts  "components: #{spell_data["components"]}"
         puts  "duration: #{spell_data["duration"]}"
 
-
     end 
 end 
