@@ -20,4 +20,10 @@ class ApplicationController < Sinatra::Base
     erb :candy
   end
 
+  get "/store" do 
+    @stores = Store.all
+    binding.pry
+    erb :rose
+  end 
+
 end
