@@ -1,0 +1,7 @@
+<ul>
+    <% @candies.each do |candy| %>
+    <a href="/candies/<%= candy.id %>">
+        <li><%= candy.name %></li>
+    </a>
+    <% end %>
+</ul>

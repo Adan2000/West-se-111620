@@ -1,0 +1,25 @@
+<form method="post" action="/candies/<%= @candy.id %>">
+  <input type="hidden" name="_method" value="PATCH" />  
+
+  <ul>
+    <li>
+      <label for="candy-name">Name</label>
+      <input id="candy-name" type="text" name="name" value="<%=@candy.name%>%"/>
+    </li>
+     <li>
+      <label for="candy-flavor">Flavor</label>
+      <input id="candy-flavor" type="text" name="flavor"  value="<%=@candy.flavor%>"/>
+    </li>
+        <li>
+      <label for="candy-company">Company</label>
+      <input id="candy-company" type="text" name="company"  value="<%=@candy.company%>"/>
+    </li>
+    <li>
+      <label for="candy-price">Price</label>
+      <input id="candy-price" type="number" name="price"  value="<%=@candy.price%>"/>
+    </li>
+    <li>
+      <input type="submit" />
+    </li>
+  </ul>
+</form>
