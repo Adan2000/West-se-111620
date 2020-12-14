@@ -1,0 +1,16 @@
+<form method="post" action="/stores/<%=@store.id%>">
+    <input type="hidden" name="_method" value="PATCH">
+    <ul>
+        <li>
+            <label for="store-name">Name</label>
+            <input id="store-name" type="text" name="name" value="<%=@store.name%>"/>
+        </li>
+         <li>
+            <label for="store-location">Location</label>
+            <input id="store-location" type="text" name="location" value="<%=@store.location%>" />
+        </li>
+        <li>
+            <input type="submit">
+        </li>
+    </ul>
+</form>
