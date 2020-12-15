@@ -1,0 +1,18 @@
+<%= form_with model:@artist do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :death %>
+    <%= f.text_field :death %>
+
+    <%= f.label :nationality %>
+    <%= f.text_field :nationality %>
+
+    <%= f.label :known_for %>
+    <%= f.text_field :known_for %>
+
+    <%= f.label :age %>
+    <%= f.text_field :age %>
+
+    <%= f.submit%>
+<% end %>

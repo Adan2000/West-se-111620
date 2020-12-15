@@ -1,0 +1,41 @@
+<%# <form action="/artists/<%@artist.id% method="post">
+    <input type="hidden" value="PATCH" name="_method">
+    <label for="artist_name">Name</label>
+    <input id="artist_name" type="text" name="name">
+
+    <label for="artist_death">Death</label>
+    <input id="artist_death" type="text" name="death">
+
+    <label for="artist_nationality">Nationality</label>
+    <input id="artist_nationality" type="text" name="nationality">
+
+    <label for="artist_known_for">Known for</label>
+    <input id="artist_known_for" type="text" name="known_for">
+
+
+    <label for="artist_age">Age</label>
+    <input id="artist_age" type="number" name="age"> 
+
+    <input type="submit">
+</form> %>
+
+<%#= form_tag artist_path(@artist), method:"PATCH" do %>
+    <%#= label_tag :name %>
+    <%#= text_field_tag :name, @artist.name %>
+
+    <%#= label_tag :death %>
+    <%#= text_field_tag :death, @artist.death %>
+
+    <%#= label_tag :nationality %>
+    <%#= text_field_tag :nationality, @artist.nationality %>
+
+    <%#= label_tag :known_for %>
+    <%#= text_field_tag :known_for, @artist.known_for %>
+
+    <%#= label_tag :age %>
+    <%#= text_field_tag :age, @artist.age %>
+
+    <%#= submit_tag %>
+<%# end %>
+
+<%= render "form" %>
