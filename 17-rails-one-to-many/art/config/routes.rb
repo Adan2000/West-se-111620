@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :galleries, only: [:index, :show]
   resources :paintings
   resources :artists, only: [:index, :show, :edit, :update, :new, :create,]
 

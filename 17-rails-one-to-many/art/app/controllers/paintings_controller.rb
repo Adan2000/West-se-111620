@@ -4,7 +4,6 @@ class PaintingsController < ApplicationController
   def index
     @paintings = Painting.all
   end
-
  
   def show
   end
@@ -12,12 +11,14 @@ class PaintingsController < ApplicationController
   def new
     @painting = Painting.new
     @artists = Artist.all
+    @galleries = Gallery.all
   end
 
   def edit
   end
 
   def create
+    byebug
     @painting = Painting.create(painting_params)
     redirect_to @painting
   end
@@ -36,11 +37,10 @@ class PaintingsController < ApplicationController
   private
 
   def set_painting
-    byebug
     @painting = Painting.find(params[:id])
   end 
  
   def painting_params
-    params.require(:painting).permit(:name, :image, :artist_id)
+    params.require(:painting).permit(:name, :image, :artist_id, :gallery_id)
   end
 end
