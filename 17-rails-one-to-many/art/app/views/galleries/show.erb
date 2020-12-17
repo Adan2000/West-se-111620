@@ -1,0 +1,6 @@
+<h1><%=@gallery.name%></h1>
+<%= link_to 'Hire Curator', new_curator_path %>
+
+<% @gallery.curators.each do |curator|%>
+    <p><%=curator.name%></p>
+<% end %>

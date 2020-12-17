@@ -1,4 +1,6 @@
 class Painting < ApplicationRecord
   belongs_to :artist
-  belongs_to :gallery
+
+  has_many :exhibitions, dependent: :destroy
+  has_many :galleries, through: :exhibitions
 end

@@ -19,7 +19,8 @@ class PaintingsController < ApplicationController
 
   def create
     byebug
-    @painting = Painting.create(painting_params)
+    @painting = Painting.create(name:painting_params[:name], image:painting_params[:image], artist_id:painting_params[:artist_id])
+    painting_params[:galleries].each{|gallery| Exhibition.create(painting_id:@painting.id, gallery_id:gallery)}
     redirect_to @painting
   end
 
@@ -41,6 +42,6 @@ class PaintingsController < ApplicationController
   end 
  
   def painting_params
-    params.require(:painting).permit(:name, :image, :artist_id, :gallery_id)
+    params.require(:painting).permit(:name, :image, :artist_id, galleries:[])
   end
 end

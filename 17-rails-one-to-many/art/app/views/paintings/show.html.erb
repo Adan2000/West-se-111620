@@ -9,10 +9,14 @@
   <strong>Artist:</strong>
   <%= @painting.artist.name%>
 </p>
+
+<strong>Gallery:</strong>
+<% @painting.galleries.each do |g|%>
 <p>
-  <strong>Gallery:</strong>
-  <%= @painting.gallery.name%>
+  <%= g.name %>
 </p>
+<%end%>
+
 
 <p>
 <%= image_tag @painting.image %>

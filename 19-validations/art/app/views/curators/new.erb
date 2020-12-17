@@ -1,0 +1,10 @@
+<%= form_with model: @curator do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :pay %>
+    <%= f.text_field :pay %>
+    <br>
+    <%= f.collection_check_boxes :galleries, @galleries, :id, :name, include_hidden: false%>
+    <%= f.submit %>
+<% end %>

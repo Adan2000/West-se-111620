@@ -1,0 +1,11 @@
+<h1>Galleries</h1>
+
+<table>
+  <tbody>
+    <% @galleries.each do |gallery| %>
+      <tr>
+        <td><%= link_to gallery.name, gallery %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

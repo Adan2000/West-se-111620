@@ -1,0 +1,32 @@
+<% if flash[:errors] %>
+    <% flash[:errors].each do |error| %>
+        <p><%= error %> </p>
+    <% end %>
+<% end %>
+
+<%= form_with model: @painting do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :image %>
+    <%= f.text_field :image %>
+
+    <%= f.label :date_made %>
+    <%= f.number_field :date_made %>
+    <%# f.collection_select [key], array, value, browser %>
+    <%= f.collection_select :artist_id, @artists, :id, :name %>
+    <br>
+    <%# f.collection_check_boxes [key][], array, value, browser, removes -> "" %>
+
+   <%= f.fields_for :tags, @tag do |t| %>
+        <%= t.text_field :name %>
+    <% end %>
+<%# 
+    <select name="painting[artist_id]">
+        <option value="1">Vinceent van Gogh</option>
+        <option value="2">Frida Kahlo</option>
+        <option value="3">Claude Monet</option>
+    </select> %>
+
+    <%= f.submit %>
+<% end %>

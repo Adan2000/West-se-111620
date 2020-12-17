@@ -6,8 +6,9 @@
     <%= f.text_field :image %>
     <%# f.collection_select [key], array, value, browser %>
     <%= f.collection_select :artist_id, @artists, :id, :name %>
-    <%= f.collection_select :gallery_id, @galleries, :id, :name %>
-
+    <br>
+    <%# f.collection_check_boxes [key][], array, value, browser, removes -> "" %>
+    <%= f.collection_check_boxes :galleries, @galleries, :id, :name, include_hidden: false %>
 <%# 
     <select name="painting[artist_id]">
         <option value="1">Vinceent van Gogh</option>
