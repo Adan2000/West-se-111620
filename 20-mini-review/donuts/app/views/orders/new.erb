@@ -1,0 +1,16 @@
+<% if flash[:errors] %>
+    <% flash[:errors].each do |error| %>
+        <p><%= error %> </p>
+    <% end %>
+<% end %>
+<%= form_with model: @order do |f| %>
+    <%= f.label :time %>
+    <%= f.text_field :time %>
+    
+    <%# <%= f.collection_select :customer_id, ["ix","rose","adam","emiley"], :downcase, :upcase %> 
+    <%= f.collection_select :customer_id, @customers, :id, :name %>
+    <%= f.collection_select :donut_id, @donuts, :id, :flavor %>
+
+    <%= f.submit %>
+
+<% end %>
