@@ -1,0 +1,5 @@
+<%= @user.name %>
+<% @user.recipes.each do |r| %>
+    <p><%= r.name %> </p>
+<% end %>
+<%= button_to "DELETE USER", @user, method: :delete%>
