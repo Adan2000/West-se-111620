@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trivia</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <%  if @logged_in %>
+   <%= link_to "Log out", log_out_path,  :method => :delete %>
+    <h1> <%= @user.username %> </h1>
+  <% else %>
+    <%= link_to "Log in",  new_log_in_path %>
+    <%= link_to "Sing up",  new_user_path %>
+
+  <% end %>
+<br>
+  <% if flash[:errors]  %>
+    <% flash[:errors].each do |error| %>
+      <%= error %>
+    <% end %>
+  <% end %>
+    <%= yield %>
+  </body>
+</html>
