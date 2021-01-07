@@ -7,18 +7,22 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
   </head>
 
   <body>
-  <%  if @logged_in %>
-   <%= link_to "Log out", log_out_path,  :method => :delete %>
-    <h1> <%= @user.username %> </h1>
-  <% else %>
-    <%= link_to "Log in",  new_log_in_path %>
-    <%= link_to "Sing up",  new_user_path %>
 
-  <% end %>
-<br>
+    <%  if @logged_in %>
+    <h1> <%= @user.username %> </h1>
+    <nav>
+    <%= link_to "Log out", log_out_path,  :method => :delete %>
+    <% else %>
+    <nav>
+      <%= link_to "Log in",  new_log_in_path %>
+      <%= link_to "Sing up",  new_user_path %>
+    <% end %>
+  </nav>
   <% if flash[:errors]  %>
     <% flash[:errors].each do |error| %>
       <%= error %>

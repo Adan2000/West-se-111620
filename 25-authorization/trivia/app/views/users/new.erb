@@ -1,9 +1,11 @@
-<h2> Hi New User! </h1>
-<%= form_with model: @user  do |f|%>
-    <%= f.label :username %>
-    <%= f.text_field :username %>
+<div class="container" id="log_in_form" >
+    <h2> Hi New User! </h1>
+    <%= form_with model: @user  do |f|%>
+        <%= f.label :username %>
+        <%= f.text_field :username %>
 
-    <%= f.label :password %>
-    <%= f.text_field :password %>
-    <%= f.submit %>
-<% end %>
+        <%= f.label :password %>
+        <%= f.text_field :password %>
+        <%= f.submit %>
+    <% end %>
+</div>

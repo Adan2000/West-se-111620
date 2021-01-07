@@ -3,6 +3,7 @@
     <h3>Correct So Far: <%= @number_correct %></h3>
     <h1><%= @question.content %></h1>
     <ul>
+    <div class="container" id="question_from">
     <%= form_with model:@questionResponse do | form | %>
         <%= form.hidden_field :question_id %>
         <label>Choices:</label>
@@ -15,6 +16,7 @@
         <%= form.submit "Submit"%>
     <% end %>   
 </ul>
+</div>
 <% else %>
 <div> You Win! You are so smart! </div>
 <% end %>
