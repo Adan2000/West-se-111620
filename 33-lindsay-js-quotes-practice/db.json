@@ -1,0 +1,21 @@
+{
+  "quotes": [
+    {
+      "id": 11,
+      "quote": "The here and now is all we have, and if we play it right it's all we'll need.",
+      "author": "Ann Richards"
+    },
+    {
+      "quote": "i love quotes",
+      "author": "lindsay",
+      "id": 12
+    },
+    {
+      "quote": "heyyyyy",
+      "author": "me",
+      "likes": [],
+      "id": 13
+    }
+  ],
+  "likes": []
+}
