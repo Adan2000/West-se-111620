@@ -1,0 +1,24 @@
+- rails new 
+- install gem
+    - rack-cors
+    - faker
+    - serializer
+- CORS
+- rails resources make all models and migrations 
+- rails db:migrate
+- seeds
+- GET ALL - index
+    - Fetch all
+    - DOM 
+- GET one - show
+    - Fetch one
+    - DOM 
+- POST create 
+    - Fetch Post
+    - DOM
+- PATCH
+    - Fetch Patch
+    - DOM
+- DELETE
+    - Fetch Delete
+    - DOM
