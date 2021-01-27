@@ -1,0 +1,32 @@
+- rails new 
+- install gem
+    - rack-cors
+    - faker
+    - serializer
+- CORS
+- rails resources make all models and migrations 
+- rails db:migrate
+- seeds
+- GET ALL - index
+    - Fetch all
+    - DOM 
+- GET one - show
+    - Fetch one
+    - DOM 
+- POST create 
+    -[x] Form
+    - [x] user input from form 
+        - event 
+    - [x] pass input to post fetch
+    - [ ] hit my create route 
+    - [x] hit my create action
+    - Create plant from user input (params)
+    - send plant back to front end
+    - render new plant
+    - DOM
+- PATCH
+    - Fetch Patch
+    - DOM
+- DELETE
+    - Fetch Delete
+    - DOM

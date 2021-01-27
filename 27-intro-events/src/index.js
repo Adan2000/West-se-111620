@@ -74,22 +74,35 @@ function handleSubmit(e){
    addToAside(cat)
 }
 
+// function handleFormToggle(){
+//     let form = document.querySelector('form')
+//     form.classList.toggle('hide')
+// }
+
 // add eventListeners 
 function addListeners(){
-    // let ul = document.getElementById('cat_ul')
     let catListLi = document.querySelectorAll('#cat_ul li')
     let form = document.querySelector('form')
+    let btn = document.querySelector('#add_cat_btn')
 
     catListLi.forEach(function(li){
-    // li.addEventListener('click', function(e){
-    //     console.log(e.target.textContent)
-    // // allCats.find{|cat| name == cat.name}
-    //     let selected_cat = allCats.find(function(cat){
-    //        return cat.name === e.target.textContent
-    //     })
-    // })
     li.addEventListener('click', handleClick)
     })
+
     form.addEventListener('submit',handleSubmit)
+    btn.addEventListener('click', function(e){
+        // console.log(e.target.textContent)
+        let form = document.querySelector('form')
+        form.classList.toggle('hide')
+    })
 }
 
+function sayHiRose(greeting){
+    greeting('rose')
+}
+
+function greeting(name){
+    console.log(`hi my name is ${name}`)
+}
+
+sayHiRose(greeting)
