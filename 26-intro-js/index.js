@@ -38,16 +38,16 @@ console.log('arr2 :', arr2)
     let catImage = document.querySelector('#inner_cat_info img')
     console.log(catImage)
     //Create
-    let catchphraseDiv = document.createElement('div')
+    let cat = document.createElement('div')
     let p = document.createElement('p')
     //add attributes
     p.id  = 'party-cat-catchphrase'
     p.className ='catchphrase'
     p.textContent = 'Party Cat likes to Party'
     // container.appendChild(p)
-    catchphraseDiv.appendChild(p)
-    console.log(catchphraseDiv)
-    // catDiv.insertBefore(catchphraseDiv, catImage)
+    div.appendChild(p)
+    console.log(div)
+    // catDiv.insertBefore(div, catImage)
 
     //Update
     btn.textContent = 'Add to Guest List'

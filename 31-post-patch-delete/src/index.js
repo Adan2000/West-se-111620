@@ -74,10 +74,13 @@ function loadCat(cat){
     let h2 = container.querySelector('h2')
     let img = container.querySelector('img')
     let p = container.querySelector('p')
+    let editBtn = document.createElement('button')
 
     h2.textContent = cat.name 
     img.src = cat.image
     p.textContent = cat.catchphrase
+    editBtn.textContent = 'Edit'
+    editBtn.addEventListener('click', (e) => handleEdit(e, cat))
 }
 
 function addToAside(cat){
@@ -113,15 +116,15 @@ function handleSubmit(e){
     postCat(cat)
 }
 
-function handleUpdate(e){
+function handleUpdate(e, cat){
     e.preventDefault()
-    let cat = {
-        "id": selectedCat.id,
+    let newCat = {
+        "id": cat.id,
         "name": e.target.cat_name.value,
         "image": e.target.cat_image.value,
         "catchphrase": e.target.cat_phrase.value
     }
-    patchCat(cat)
+    patchCat(newCat)
 }
 
 function handleHide(){
@@ -135,13 +138,13 @@ function handleNew(){
     form.addEventListener('submit',handleSubmit)
 }
 
-function handleEdit(){
+function handleEdit(e, cat){
     handleHide()
     let form = document.querySelector('form')
-    form.addEventListener('submit',handleUpdate)
-    form[0].value = selectedCat.name
-    form[1].value = selectedCat.image
-    form[2].value = selectedCat.catchphrase
+    form.addEventListener('submit',(e) => handleUpdate(e,cat))
+    form[0].value = cat.name
+    form[1].value = cat.image
+    form[2].value = cat.catchphrase
     form[3].value = 'Edit Cat'
     
 }
@@ -159,6 +162,6 @@ function addListeners(){
 
     btn.addEventListener('click',handleNew)
     catBtn.addEventListener('click', randoCatFact)
-    editCatBtn.addEventListener('click', handleEdit)
+    
 }
 

@@ -2864,3 +2864,158 @@ Processing by PlantsController#show as */*
 Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 2523)
 
 
+Started GET "/plants" for ::1 at 2021-01-27 09:52:07 -0800
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlantsController#index as */*
+  [1m[36mPlant Load (1.1ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (1.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 7]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 8]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 9]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 10]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 11]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 12]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 13]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 14]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 15]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 16]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 17]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 18]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 19]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 20]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 21]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 22]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 23]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 24]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 25]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 26]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 27]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 28]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 29]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 30]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 31]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 32]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 33]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 34]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.4ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 35]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 36]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 37]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 38]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 39]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 40]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 41]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 42]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 43]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 44]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 45]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 46]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 47]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 48]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 49]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT "stores".* FROM "stores" INNER JOIN "plant_store_locations" ON "stores"."id" = "plant_store_locations"."store_id" WHERE "plant_store_locations"."plant_id" = ?[0m  [["plant_id", 50]]
+[active_model_serializers]   ↳ app/controllers/plants_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (234.24ms)
+Completed 200 OK in 282ms (Views: 261.5ms | ActiveRecord: 10.5ms | Allocations: 117352)
+
+
+Started POST "/plants" for ::1 at 2021-01-27 09:52:23 -0800
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for PlantsController):
+  
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
