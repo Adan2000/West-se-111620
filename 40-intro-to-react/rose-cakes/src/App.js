@@ -6,10 +6,19 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Cake dog={data[0]}/>
-      {/* <Cake cake={data[1]}/>
-      <Cake cake={data[2]}/>
-      <Cake cake={data[3]}/> */}
+      
+      { data.map(cakeFromData => <Cake propsCake={cakeFromData} /> ) }
+      {/* {[
+        <Cake propsCake={cakeFromData} />,
+        <Cake propsCake={cakeFromData} />,
+        <Cake propsCake={cakeFromData} />,
+        <Cake propsCake={cakeFromData} />
+
+      ]} */}
+      {/* {data.map(function(cakeFromData){
+        return <Cake propsCake={cakeFromData} /> 
+        }
+      )} */}
 
     </div>
   )
