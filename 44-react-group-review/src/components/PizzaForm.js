@@ -1,16 +1,29 @@
 import React from "react"
 
-const PizzaForm = () => {
+class PizzaForm extends React.Component{
+  // state = {
+  //   topping:'',
+  //   size:''
+  // }
+
+  // handleChange = (e) => {
+  //   console.log(e.target.value)
+  //   this.setState({
+  //     [e.target.name]:e.target.value
+  //   })
+  // }
+
+  render(){
+  
   return(
       <div className="form-row">
         <div className="col-5">
-            <input type="text" className="form-control" placeholder="Pizza Topping" value={
-                //Pizza Topping Should Go Here
-                null
+            <input onChange={this.props.handleChange} type="text" name="topping" className="form-control" placeholder="Pizza Topping" defaultValue={
+                this.props.selectedPizza.topping
               }/>
         </div>
         <div className="col">
-          <select value={null} className="form-control">
+          <select name="size" onChange={this.props.handleChange}  value={this.props.selectedPizza.size} className="form-control">
             <option value="Small">Small</option>
             <option value="Medium">Medium</option>
             <option value="Large">Large</option>
@@ -36,6 +49,7 @@ const PizzaForm = () => {
       </div>
 
   )
+  }
 }
 
 export default PizzaForm

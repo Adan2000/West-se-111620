@@ -1,14 +1,33 @@
 import React from "react"
 
-const Pizza = () => {
+const Pizza = ({pizza,editPizza}) => {
   return(
     <tr>
-      <td>{"Replace Me With Pizza Topping"}</td>
-      <td>{"Replace Me With Pizza Size"}</td>
-      <td>{"Replace Me With Vegatarian"}</td>
-      <td><button type="button" className="btn btn-primary">Edit Pizza</button></td>
+      <td>{pizza.topping}</td>
+      <td>{pizza.size}</td>
+      {/* <td>{String(props.pizza.vegetarian)}</td> */}
+      <td>{pizza.vegetarian.toString()}</td>
+
+      <td><button onClick={()=> editPizza(pizza)} type="button" className="btn btn-primary">Edit Pizza</button></td>
     </tr>
   )
 }
 
 export default Pizza
+
+
+// class Pizza extends React.Component{
+// let pizza = props.pizza
+// render(){
+//   return(
+//     <tr>
+//       <td>{this.props.pizza.topping}</td>
+//       <td>{this.props.pizza.size}</td>
+//       {/* <td>{String(props.pizza.vegetarian)}</td> */}
+//       <td>{this.props.pizza.vegetarian.toString()}</td>
+
+//       <td><button type="button" className="btn btn-primary">Edit Pizza</button></td>
+//     </tr>
+//   )
+//    }
+// }
