@@ -164,17 +164,3 @@ session[:user_id] # read from the cookie
 1. On mount, check if there is a token
 2. If so, fetch user info
 3. If not...
-
-## Questions
-
-- How to hide your secret key?
--> env
-
-- Is React State secure?
--> As safe as any other javascript executing in the browser
--> XSS is a big vulnerability :/
-
-- Other attack vectors? Liabilities?
--> Scrub your logs
-
-[Solution](https://github.com/learn-co-curriculum/lectures-starter-code/commit/90a15907615117f961dfc55f9b595143084198fb#diff-3a8884c5b667fda003b25f237e1f300e)
